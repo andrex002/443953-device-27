@@ -37,7 +37,7 @@
 	</div>
 	<main>
 		<div class="container">
-			<h1>Интернет магазин гаджетов</h1>
+			<h1 class="visually-hidden">Интернет магазин гаджетов</h1>
 			<section>
 				<ul class="slider">
 					<li class="slide">
@@ -100,7 +100,7 @@
 				</ul>
 			</section>
 			<section>
-				<h2>Категории товаров</h2>
+				<h2 class="visually-hidden">Категории товаров</h2>
 				<ul>
 					<li><a href="#">Виртуальная реальность</a></li>
 					<li><a href="#">Моноподы для селфи</a></li>
@@ -113,7 +113,7 @@
 		</div>
 		<section>
 			<div class="container">
-				<h2>Сервисы</h2>
+				<h2 class="visually-hidden">Сервисы</h2>
 				<ul>
 					<li>Доставка</li>
 					<li>Гарантия</li>
@@ -135,7 +135,7 @@
 		</section>
 		<div class="container">
 			<section>
-				<h2>Наши партнеры</h2>
+				<h2 class="visually-hidden">Наши партнеры</h2>
 				<ul>
 					<li><img src="img/partner-dji.jpg" alt="Партнер Dji" width="260" height="100"></li>
 					<li><img src="img/partner-sp_gadgets.jpg" alt="Партнер SP Gadgets" width="260" height="100"></li>
@@ -158,11 +158,37 @@
 				<h2>Контакты</h2>
 				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 				<a href="#">
-					<img src="img/map.jpg" alt="Карта с местоположением нашего офиса">
+					<img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу город Москва, улица Строителей 15">
 				</a>
 				<a href="#">Напишите нам</a>
 			</section>
 		</div>
+		<section>
+			<h2 class="visually-hidden">Напишите нам</h2>
+			<form action="https://echo.htmlacademy.ru" method="post">
+				<div>
+					<label for="user-name">Ваше имя:</label>
+					<input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
+				</div>
+				<div>
+					<label for="user-email">Ваш e-mail:</label>
+					<input type="email" id="user-email" name="user-email" placeholder="email@example.com">
+				</div>
+				<div>
+					<label for="user-message">Текст письма:</label>
+					<textarea id="user-message" name="user-message" placeholder="В свободной форме"></textarea>
+				</div>
+				<button type="submit">Отправить</button>
+			</form>
+			<button type="button">Закрыть</button>
+		</section>
+		<section>
+			<h2 class="visually-hidden">Большая карта местоположения офиса</h2>
+			<p>
+				<img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу город Москва, улица Строителей 15">
+			</p>
+			<button type="button">Закрыть</button>
+		</section>
 	</main>
 	<footer>
 		<div class="container">
