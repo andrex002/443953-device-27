@@ -3,23 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>HTML Academy: Девайс</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="container">
-		<header>
+		<header class="main-header">
 			<nav>
 				<a>
-					<img src="img/logo-device.svg" alt="Логотип Девайс" width="164" height="35">
+					<img src="img/logo-device.svg" class="logo" width="164" height="35" alt="Логотип Девайс">
 				</a>
 				<ul class="second-menu">
-					<li><input type="search" placeholder="Поиск по сайту"></li>
-					<li><a href="#">Войти</a></li>
-					<li><a href="#">Сравнить</a></li>
-					<li><a href="#">Корзина</a></li>
+					<li class="second-menu-item"><input type="search" placeholder="Поиск по сайту"></li>
+					<li class="second-menu-item"><a href="#">Войти</a></li>
+					<li class="second-menu-item"><a href="#">Сравнить</a></li>
+					<li class="second-menu-item"><a href="#">Корзина</a></li>
 				</ul>
 				<ul class="main-menu">
-					<li>Каталог товаров
-						<ul>
+					<li class="main-menu-item"><a>Каталог товаров</a>
+						<ul class="main-menu-nested-list">
 							<li><a href="#">Виртуальная реальность</a></li>
 							<li><a href="#">Фитнес-браслеты</a></li>
 							<li><a href="#">Квадрокоптеры</a></li>
@@ -28,9 +30,9 @@
 							<li><a href="#">Экшн-камеры</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Гарантия</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li class="main-menu-item"><a href="#">Доставка</a></li>
+					<li class="main-menu-item"><a href="#">Гарантия</a></li>
+					<li class="main-menu-item"><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -38,16 +40,16 @@
 	<main>
 		<div class="container">
 			<h1 class="visually-hidden">Интернет магазин гаджетов</h1>
-			<section>
-				<ul class="slider">
+			<section class="slider">
+				<ul class="slider-list">
 					<li class="slide">
-						<p>01</p>
+						<p class="slide-number">01</p>
 						<img src="img/slider-1.png" alt="Палка для селфи" width="384" height="486">
 						<div class="slide-content">
-							<h2>Делай селфи, как Бен Стиллер!</h2>
-							<p>Самая длинная палка для селфи доступна в нашем магазине.Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-							<a href="#">Подробнее</a>
-							<table>
+							<h2 class="slide-title">Делай селфи, как Бен Стиллер!</h2>
+							<p class="slide-desc">Самая длинная палка для селфи доступна в нашем магазине.Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+							<a href="#" class="btn"><span>Подробнее</span></a>
+							<table class="slide-parameters">
 								<tr>
 									<td>8.5 м</td>
 									<td>5 кг</td>
@@ -62,13 +64,13 @@
 						</div>
 					</li>
 					<li class="slide">
-						<p>02</p>
+						<p class="slide-number">02</p>
 						<img src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
 						<div class="slide-content">
-							<h2>Худеем правильно!</h2>
-							<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-							<a href="#">Подробнее</a>
-							<table>
+							<h2 class="slide-title">Худеем правильно!</h2>
+							<p class="slide-desc">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+							<a href="#" class="btn"><span>Подробнее</span></a>
+							<table class="slide-parameters">
 								<tr>
 									<td>48 часов</td>
 								</tr>
@@ -79,13 +81,13 @@
 						</div>
 					</li>
 					<li class="slide">
-						<p>03</p>
+						<p class="slide-number">03</p>
 						<img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
 						<div class="slide-content">
-							<h2>Порхает как бабочка, жалит как пчела!</h2>
-							<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-							<a href="#">Подробнее</a>
-							<table>
+							<h2 class="slide-title">Порхает как бабочка, жалит как пчела!</h2>
+							<p class="slide-desc">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+							<a href="#" class="btn"><span>Подробнее</span></a>
+							<table class="slide-parameters">
 								<tr>
 									<td>800 м</td>
 									<td>50 м</td>
@@ -99,71 +101,71 @@
 					</li>
 				</ul>
 			</section>
-			<section>
+			<section class="category">
 				<h2 class="visually-hidden">Категории товаров</h2>
-				<ul>
-					<li><a href="#">Виртуальная реальность</a></li>
-					<li><a href="#">Моноподы для селфи</a></li>
-					<li><a href="#">Экшн-камеры</a></li>
-					<li><a href="#">Фитнес-браслеты</a></li>
-					<li><a href="#">Умные часы</a></li>
-					<li><a href="#">Квадрокортеры</a></li>
+				<ul class="category-list">
+					<li class="category-item"><a href="#">Виртуальная реальность</a></li>
+					<li class="category-item"><a href="#">Моноподы для селфи</a></li>
+					<li class="category-item"><a href="#">Экшн-камеры</a></li>
+					<li class="category-item"><a href="#">Фитнес-браслеты</a></li>
+					<li class="category-item"><a href="#">Умные часы</a></li>
+					<li class="category-item"><a href="#">Квадрокортеры</a></li>
 				</ul>
 			</section>
 		</div>
-		<section>
+		<section class="services">
 			<div class="container">
 				<h2 class="visually-hidden">Сервисы</h2>
-				<ul>
-					<li>Доставка</li>
-					<li>Гарантия</li>
-					<li>Кредит</li>
+				<ul class="services-list">
+					<li class="services-item">Доставка</li>
+					<li class="services-item">Гарантия</li>
+					<li class="services-item">Кредит</li>
 				</ul>
 				<div>
-					<h3>Доставка</h3>
-					<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+					<h3 class="services-item-title">Доставка</h3>
+					<p class="services-item-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 				</div>
 				<div>
-					<h3>Гарантия</h3>
-					<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
+					<h3 class="services-item-title">Гарантия</h3>
+					<p class="services-item-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
 				</div>
 				<div>
-					<h3>Кредит</h3>
-					<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+					<h3 class="services-item-title">Кредит</h3>
+					<p class="services-item-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 				</div>
 			</div>
 		</section>
 		<div class="container">
-			<section>
+			<section class="partners">
 				<h2 class="visually-hidden">Наши партнеры</h2>
-				<ul>
-					<li><img src="img/partner-dji.jpg" alt="Партнер Dji" width="260" height="100"></li>
-					<li><img src="img/partner-sp_gadgets.jpg" alt="Партнер SP Gadgets" width="260" height="100"></li>
-					<li><img src="img/partner-go_pro.jpg" alt="Партнер GoPro" width="260" height="100"></li>
-					<li><img src="img/partner-vive.jpg" alt="Партнер Vive" width="260" height="100"></li>
+				<ul class="partners-list">
+					<li class="partners-item"><img src="img/partner-dji.jpg" alt="Партнер Dji" width="260" height="100"></li>
+					<li class="partners-item"><img src="img/partner-sp_gadgets.jpg" alt="Партнер SP Gadgets" width="260" height="100"></li>
+					<li class="partners-item"><img src="img/partner-go_pro.jpg" alt="Партнер GoPro" width="260" height="100"></li>
+					<li class="partners-item"><img src="img/partner-vive.jpg" alt="Партнер Vive" width="260" height="100"></li>
 				</ul>
 			</section>
-			<section>
-				<h2>О нас</h2>
-				<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-				<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-				<ul>
+			<section class="about-us">
+				<h2 class="about-us-title">О нас</h2>
+				<p class="about-us-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+				<p class="about-us-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+				<ul class="about-us-transport-company">
 					<li>Деловые Линии</li>
 					<li>Автотрейдинг</li>
 					<li>ЖелДорЭкспедиция</li>
 				</ul>
-				<a href="#">Подробнее о нас</a>
+				<a href="#" class="btn">Подробнее о нас</a>
 			</section>
-			<section>
-				<h2>Контакты</h2>
-				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+			<section class="contacts">
+				<h2 class="contacts-title">Контакты</h2>
+				<p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 				<a href="#">
 					<img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу город Москва, улица Строителей 15">
 				</a>
-				<a href="#">Напишите нам</a>
+				<a href="#" class="btn"><span>Напишите нам</span></a>
 			</section>
 		</div>
-		<section>
+		<section class="popup">
 			<h2 class="visually-hidden">Напишите нам</h2>
 			<form action="https://echo.htmlacademy.ru" method="post">
 				<div>
@@ -178,11 +180,11 @@
 					<label for="user-message">Текст письма:</label>
 					<textarea id="user-message" name="user-message" placeholder="В свободной форме"></textarea>
 				</div>
-				<button type="submit">Отправить</button>
+				<button type="submit" class="popup-submit btn"><span>Отправить</span></button>
 			</form>
 			<button type="button">Закрыть</button>
 		</section>
-		<section>
+		<section class="map-big">
 			<h2 class="visually-hidden">Большая карта местоположения офиса</h2>
 			<p>
 				<img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу город Москва, улица Строителей 15">
@@ -190,34 +192,34 @@
 			<button type="button">Закрыть</button>
 		</section>
 	</main>
-	<footer>
+	<footer class="main-footer">
 		<div class="container">
 			<div>
-				<a><img src="img/logo-device.svg" alt="Логотип DEVICE" width="164" height="35"></a>
-				<ul>
-					<li><a href="#">Войти</a></li>
-					<li><a href="#">Сравнить</a></li>
-					<li><a href="#">Корзина</a></li>
+				<a><img src="img/logo-device.svg" class="logo" width="164" height="35" alt="Логотип DEVICE"></a>
+				<ul class="user-menu">
+					<li class="user-menu-item"><a href="#">Войти</a></li>
+					<li class="user-menu-item"><a href="#">Сравнить</a></li>
+					<li class="user-menu-item"><a href="#">Корзина</a></li>
 				</ul>
 			</div>
 			<div>
-				<p>г. Москва, ул. Строителей, 15</p>
-				<ul>
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Гарантия</a></li>
-					<li><a href="#">Контакты</a></li>
+				<p class="adress">г. Москва, ул. Строителей, 15</p>
+				<ul class="menu-list">
+					<li class="menu-item"><a href="#">Доставка</a></li>
+					<li class="menu-item"><a href="#">Гарантия</a></li>
+					<li class="menu-item"><a href="#">Контакты</a></li>
 				</ul>
-				<p>Тел.: +7 (495) 495-95-95</p>	
+				<p class="tel">Тел.: +7 (495) 495-95-95</p>	
 			</div>
 			<div>
 				<div></div>
-				<ul>
-					<li><a href="#">Facebook</a></li>
-					<li><a href="#">Instagram</a></li>
-					<li><a href="#">Twitter</a></li>
+				<ul class="social-list">
+					<li class="social-item"><a href="#">Facebook</a></li>
+					<li class="social-item"><a href="#">Instagram</a></li>
+					<li class="social-item"><a href="#">Twitter</a></li>
 				</ul>
 				<a href="https://htmlacademy.ru/intensive/htmlcss">
-					<img src="img/logo-html.svg" alt="Логотип HTML Academy" width="27" height="34">
+					<img src="img/logo-html.svg" class="logo" width="27" height="34" alt="Логотип HTML Academy">
 				</a>
 			</div>
 		</div>
