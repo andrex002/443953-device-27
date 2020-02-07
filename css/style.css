@@ -53,10 +53,14 @@ a {
 	font-weight: 800;
 	letter-spacing: 0.01em;
 }
-.logo:hover {
+.logo {
+	width: 164px;
+	height: 35px;
+}
+.logo-link[href]:hover {
 	opacity: 60%;
 }
-.logo:active {
+.logo-link[href]:active {
 	opacity: 30%;
 }
 .btn {
@@ -77,7 +81,7 @@ a {
 	opacity: 30%;
 }
 .main-header {
-	background-color: #f7e296;
+	background-image: linear-gradient(to bottom, #ffffff 40px, #f7e296 40px);
 }
 .main-header ul {
 	list-style: none;
@@ -103,6 +107,10 @@ a {
 .second-menu-item a:active{
 	opacity: 30%;
 }
+.second-menu-item-pale,
+.user-menu-item-pale {
+	opacity: 30%;
+}
 .main-menu-item > a {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
@@ -110,6 +118,7 @@ a {
 	color: #000000;
 	font-weight: 800;
 	text-transform: uppercase;
+	letter-spacing: 0.2em;
 }
 .main-menu-item > a:hover {
 	opacity: 60%;
@@ -120,11 +129,14 @@ a {
 .main-menu-nested-list a {
 	color: #000000;
 }
-.main-menu-nested-list a:hover {
+.main-menu-nested-list a[href]:hover {
 	opacity: 60%;
 }
-.main-menu-nested-list a:active {
+.main-menu-nested-list a[href]:active {
 	opacity: 30%;
+}
+.slider {
+	background-image: linear-gradient(to bottom, #f7e296 113px, #ffffff 113px);
 }
 .slider-list {
 	list-style: none;
@@ -134,7 +146,7 @@ a {
 	font-size: 179px;
 	line-height: 179px;
 	font-weight: 800;
-	color: #000000;
+	color: #ffffff;
 }
 .slide-title {
 	line-height: 56px;
@@ -167,7 +179,7 @@ a {
 	opacity: 30%;
 }
 .services {
-	background-color: #e5e5e5;
+	background-image: linear-gradient(to bottom, #ffffff 100px, #e5e5e5 100px);
 }
 .services-list {
 	list-style: none;
@@ -204,8 +216,8 @@ a {
 .main-footer {
 	background-color: #464646;
 }
-.main-footer .logo {
-	fill: #fff;
+.main-footer svg {
+	fill: #ffc600;
 }
 .user-menu {
 	list-style: none;
@@ -280,4 +292,146 @@ a {
 }
 .map-big img{
 	box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+}
+										/*---------- catalog.html ----------*/
+.breadcrumbs {
+	list-style: none;
+}
+.breadcrumbs a, 
+.breadcrumbs-current {
+	font-size: 14px;
+	line-height: 24px;
+	color: #000000;
+	opacity: 30%;
+}
+.breadcrumbs a:hover {
+	opacity: 60%;
+}
+.breadcrumbs a:active {
+	opacity: 10%;
+}
+.filter-title {
+	background-color: #dbdbdb;
+}
+.filter-title,
+.sort-title {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 800;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+.filter-form {
+	background-color: #efefef;
+}
+.filter-form legend {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 800;
+	letter-spacing: 0.01em;
+}
+.price-values {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 300;
+	opacity: 20%;
+}
+.property-list {
+	list-style: none;
+	font-size: 14px;
+	line-height: 40px;
+}
+.property-list input:disabled + label {
+	color: #a6a6a6;
+}
+.filter-btn {
+	border: 0;
+	background-color: transparent;
+}
+.sort {
+	background-color: #ebebeb;
+}
+.sort-list {
+	list-style: none;
+}
+.sort-list a {
+	font-size: 14px;
+	line-height: 18px;
+	color: #000000;
+	font-weight: 400;
+	opacity: 30%;
+}
+.sort-list a[href]:hover {
+	opacity: 60%;
+}
+.sort-list a[href]:active,
+.sort-list-item-active a {
+	opacity: 100%;
+}
+.product-list {
+	list-style: none;
+}
+.product-name a {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+	font-weight: 800;
+}
+.product-price {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #464646;
+}
+.product-into-basket {
+	border: 0;
+	background-color: transparent;
+}
+.product-add {
+	font-size: 13px;
+	line-height: 36px;
+	border: 0;
+	background: none;
+	opacity: 50%;
+}
+.product-add:hover {
+	opacity: 100%;
+}
+.product-add:active {
+	opacity: 20%;
+}
+.pagination {
+	background-color: #ebebeb;
+}
+.pagination-list {
+	list-style: none;
+}
+.pagination-btn {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 800;
+	color: #000000;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+.pagination .prev:hover,
+.pagination .next:hover {
+	background-color: rgba(0, 0, 0, 0.2); 
+}
+.pagination-btn span:active {
+	opacity: 30%;
+}
+.pagination-list a[href] {
+	opacity: 30%;
+}
+.pagination-list a[href]:hover {
+	opacity: 60%;
+}
+.pagination-list a[href]:active {
+	opacity: 100%;
 }
