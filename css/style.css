@@ -23,7 +23,6 @@
 	src: url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff");
 }
 body {
-	margin: 0;
 	font-size: 15px;
 	line-height: 30px;
 	font-family: "Open Sans", "Arial", sans-serif;
@@ -47,6 +46,13 @@ a {
 	padding: 0;
 	border: 0;
 }
+.title {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+	font-weight: 800;
+	letter-spacing: 0.01em;
+}
 .logo:hover {
 	opacity: 60%;
 }
@@ -59,9 +65,13 @@ a {
 	line-height: 24px;
 	font-weight: 800;
 	color: #000000;
-	background-color: #f0c52e;
+	background-image: linear-gradient(to bottom, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
+	transition: background 0.5s;
+}
+.btn:hover {
+	background: #f0c52e;
 }
 .btn span:active {
 	opacity: 30%;
@@ -73,9 +83,6 @@ a {
 	list-style: none;
 }
 .second-menu input[type="search"] {
-	font-size: 15px;
-	line-height: 30px;
-	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: 300;
 	background-color: transparent; 
 	border: 0;
@@ -111,10 +118,6 @@ a {
 	opacity: 30%;
 }
 .main-menu-nested-list a {
-	font-family: "Open Sans", "Arial", sans-serif;
-	font-size: 15px;
-	line-height: 30px;
-	font-weight: 300;
 	color: #000000;
 }
 .main-menu-nested-list a:hover {
@@ -134,10 +137,7 @@ a {
 	color: #000000;
 }
 .slide-title {
-	font-family: "Gilroy", "Arial", sans-serif;
-	font-size: 47px;
 	line-height: 56px;
-	font-weight: 800;
 }
 .slide-desc {
 	color: #464646;
@@ -178,28 +178,18 @@ a {
 	line-height: 24px;
 	font-weight: 800;
 	text-transform: uppercase;
-	background-color: #f0c52e;
+	background-image: linear-gradient(to bottom, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
 	letter-spacing: 0.2em;
+}
+.services-item:hover {
+	background: #f0c52e;
 }
 .services-item:active {
 	color: #f7e184;
 	background-color: #000000;
 }
-.services-item-title {
-	font-family: "Gilroy", "Arial", sans-serif;
-	font-size: 47px;
-	line-height: 48px;
-	font-weight: 800;
-}
 .services-item-text {
 	color: #464646;
-}
-.about-us-title,
-.contacts-title {
-	font-family: "Gilroy", "Arial", sans-serif;
-	font-size: 47px;
-	line-height: 48px;
-	font-weight: 800;
 }
 .about-us-text,
 .contacts-text {
@@ -213,6 +203,9 @@ a {
 }
 .main-footer {
 	background-color: #464646;
+}
+.main-footer .logo {
+	fill: #fff;
 }
 .user-menu {
 	list-style: none;
@@ -262,7 +255,6 @@ a {
 }
 .popup input,
 .popup textarea {
-	font-family: "Open Sans";
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 400;
@@ -284,8 +276,8 @@ a {
 }
 .popup-submit {
 	border: 0;
+	background-color: transparent;
 }
 .map-big img{
 	box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
-
 }
