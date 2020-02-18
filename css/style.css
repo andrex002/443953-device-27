@@ -70,10 +70,10 @@ a {
 	height: 35px;	
 }
 .logo-link[href]:hover {
-	opacity: 60%;
+	opacity: 0.6;
 }
 .logo-link[href]:active {
-	opacity: 30%;
+	opacity: 0.3;
 }
 .btn {
 	position: relative;
@@ -85,7 +85,6 @@ a {
 	font-weight: 800;
 	color: #000000;
 	text-align: center;
-	/*background-image: linear-gradient(to bottom, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);*/
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	z-index: 2;
@@ -106,7 +105,7 @@ a {
 	height: 100%;
 }
 .btn:active span {
-	opacity: 30%;
+	opacity: 0.3;
 }
 .main-header {
 	position: relative;
@@ -149,19 +148,16 @@ form {
 	border: 0;
 	border-top: 2px solid transparent;
 	border-bottom: 2px solid transparent;
-	/*background-image: url(../img/search.svg);
-	background-position: 4px center;
-	background-repeat: no-repeat;*/
 	outline: 0;
 }
-.search-block input::placeholder {
-	opacity: 30%;
+.search-block input {
+	opacity: 0.3;
 }
-.search-block input:hover::placeholder {
-	opacity: 60%;
+.search-block input:hover {
+	opacity: 0.6;
 }
-.search-block input:focus::placeholder {
-	opacity: 100%;
+.search-block input:focus {
+	opacity: 1;
 }
 .search-block input:focus + button,
 .search-btn:focus {
@@ -181,7 +177,7 @@ form {
 	background-color: #000000;
 }
 .search-btn:active span {
-	opacity: 30%;
+	opacity: 0.3;
 }
 .search-line {
 	position: absolute;
@@ -215,13 +211,13 @@ form {
 	color: #000000;
 }
 .user-menu-item a:hover {
-	opacity: 60%;
+	opacity: 0.6;
 }
 .user-menu-item a:active {
-	opacity: 30%;
+	opacity: 0.3;
 }
 .user-menu-item-pale {
-	opacity: 30%;
+	opacity: 0.3;
 }
 .user-menu-enter {
 	min-width: 226px;
@@ -301,7 +297,7 @@ form {
 	background-image: url(../img/plus.svg);
 	background-repeat: no-repeat;
 	background-position: center;
-	opacity: 30%;
+	opacity: 0.3;
 }
 .main-menu-item:nth-child(2) {
 	margin-right: 34px;
@@ -349,10 +345,10 @@ form {
 	line-height: 36px;
 }
 .product-catalog-list a[href]:hover {
-	opacity: 60%;
+	opacity: 0.6;
 }
 .product-catalog-list a[href]:active {
-	opacity: 30%;
+	opacity: 0.3;
 }
 .slider {
 	position: relative;
@@ -506,7 +502,7 @@ form {
 }
 .category-link:active .category-image,
 .category-link:active .category-name {
-	opacity: 60%;
+	opacity: 0.6;
 }
 .category-image-monopod {
 	align-items: flex-end;
@@ -768,7 +764,7 @@ form {
 	padding-left: 30px;
 	line-height: 36px;
 	color: #ffffff;
-	opacity: 70%;
+	opacity: 0.7;
 }
 .main-footer .user-menu-link::before {
 	content: "";
@@ -791,10 +787,10 @@ form {
 	background-image: url(../img/cart-yellow.svg);
 }
 .main-footer .user-menu-link:hover {
-	opacity: 100%;
+	opacity: 1;
 }
 .main-footer .user-menu-link:active {
-	opacity: 30%;
+	opacity: 0.3;
 }
 .main-footer-middle {
 	display: flex;
@@ -827,10 +823,10 @@ form {
 	text-transform: uppercase;
 }
 .menu-item a:hover {
-	opacity: 60%;
+	opacity: 0.6;
 }
 .menu-item a:active {
-	opacity: 30%;
+	opacity: 0.3;
 }
 .main-footer .tel {
 	width: 250px;
@@ -861,14 +857,14 @@ form {
 	display: block;
 	width: 32px;
 	height: 32px;
-	opacity: 30%;
+	opacity: 0.3;
 }
 .social-link:hover,
 .social-link:focus {
-	opacity: 60%;
+	opacity: 0.6;
 }
 .social-link:active {
-	opacity: 10%;
+	opacity: 0.1;
 }
 .social-link-facebook {
 	background-image: url(../img/fb.svg);
@@ -885,10 +881,10 @@ form {
 }
 .sponsor-link:hover,
 .sponsor-link:focus {
-	opacity: 60%;
+	opacity: 0.6;
 }
 .sponsor-link:active {
-	opacity: 30%;
+	opacity: 0.3;
 }
 .popup,
 .map-big {
@@ -907,19 +903,19 @@ form {
 	font-weight: 400;
 	background-color: #e5e5e5;
 	border: 0;
-	opacity: 50%;
+	opacity: 0.5;
 	border: 3px solid transparent;
 	outline: none;
 }
 .popup input:hover,
 .popup textarea:hover {
-	opacity: 80%;
+	opacity: 0.8;
 }
 .popup input:focus,
 .popup textarea:focus {
 	border: 3px solid #f7e296;
 	background-color: transparent;
-	opacity: 100%;
+	opacity: 1;
 }
 .popup-submit {
 	border: 0;
@@ -944,13 +940,13 @@ form {
 	font-size: 14px;
 	line-height: 24px;
 	color: #000000;
-	opacity: 30%;
+	opacity: 0.3;
 }
 .breadcrumbs a:hover {
-	opacity: 60%;
+	opacity: 0.6;
 }
 .breadcrumbs a:active {
-	opacity: 10%;
+	opacity: 0.1;
 }
 .catalog-columns {
 	display: flex;
@@ -1006,7 +1002,7 @@ aside.filter {
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 300;
-	opacity: 20%;
+	opacity: 0.2;
 }
 .filter-form .filter-color {
 	margin-bottom: 41px;
@@ -1051,14 +1047,14 @@ aside.filter {
 	line-height: 18px;
 	color: #000000;
 	font-weight: 400;
-	opacity: 30%;
+	opacity: 0.3;
 }
 .sort-list a[href]:hover {
-	opacity: 60%;
+	opacity: 0.6;
 }
 .sort-list a[href]:active,
 .sort-list-item-active a {
-	opacity: 100%;
+	opacity: 1;
 }
 .catalog-container {
 	width: 760px;
@@ -1102,13 +1098,13 @@ aside.filter {
 	line-height: 36px;
 	border: 0;
 	background: none;
-	opacity: 50%;
+	opacity: 0.5;
 }
 .product-add:hover {
-	opacity: 100%;
+	opacity: 1;
 }
 .product-add:active {
-	opacity: 20%;
+	opacity: 0.2;
 }
 .pagination {
 	background-color: #ebebeb;
@@ -1130,14 +1126,14 @@ aside.filter {
 	background-color: rgba(0, 0, 0, 0.2); 
 }
 .pagination-btn:active span {
-	opacity: 30%;
+	opacity: 0.3;
 }
 .pagination-list a[href] {
-	opacity: 30%;
+	opacity: 0.3;
 }
 .pagination-list a[href]:hover {
-	opacity: 60%;
+	opacity: 0.6;
 }
 .pagination-list a[href]:active {
-	opacity: 100%;
+	opacity: 1;
 }
