@@ -16,14 +16,12 @@
 					</svg>
 				</a>
 				<div class="second-menu">
-					<div class="search-block">
-						<form action="https://echo.htmlacademy.ru" method="get">
-							<label class="search-label" for="search">Поиск</label>
-							<input id="search" type="text" name="search" placeholder="Поиск по сайту">
-							<button class="search-btn" type="submit"><span>Найти</span></button>
-							<div class="search-line"></div>
-						</form>
-					</div>
+					<form class="search-block" action="https://echo.htmlacademy.ru" method="get">
+						<label class="search-label" for="search">Поиск</label>
+						<input id="search" type="text" name="search" placeholder="Поиск по сайту">
+						<button class="search-btn" type="submit"><span>Найти</span></button>
+						<div class="search-line"></div>
+					</form>
 					<ul class="user-menu">
 						<li class="user-menu-item user-menu-enter">
 							<a class="user-menu-link user-menu-link-user" href="#">Войти</a>
@@ -37,7 +35,8 @@
 					</ul>
 				</div>
 				<ul class="main-menu">
-					<li class="main-menu-item main-menu-item-catalog"><a>Каталог товаров</a>
+					<li class="main-menu-item main-menu-item-catalog" tabindex="0">
+						<a>Каталог товаров</a>
 						<div class="product-catalog">
 							<ul class="product-catalog-list">
 								<li><a href="#">Виртуальная реальность</a></li>
@@ -64,8 +63,11 @@
 		<div class="container">
 			<h1 class="visually-hidden">Интернет магазин гаджетов</h1>
 			<section class="slider">
+				<input class="visually-hidden slider-nav" type="radio" id="dot1" name="slides" checked>
+				<input class="visually-hidden slider-nav" type="radio" id="dot2" name="slides">
+				<input class="visually-hidden slider-nav" type="radio" id="dot3" name="slides">
 				<ul class="slider-list">
-					<li class="slide">
+					<li class="slide" id="slide1">
 						<p class="slide-number">01</p>
 						<div class="slide-image">
 							<img src="img/slider-1.png" alt="Палка для селфи" width="384" height="486">
@@ -88,13 +90,13 @@
 							</table>
 						</div>
 					</li>
-					<li class="slide">
+					<li class="slide" id="slide2">
 						<p class="slide-number">02</p>
 						<div class="slide-image">
 							<img src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
 						</div>
 						<div class="slide-content">
-							<h2 class="title slide-title">Худеем правильно!</h2>
+							<h2 class="title slide-title">Худеем <br>правильно!</h2>
 							<p class="slide-desc">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 							<a href="#" class="btn"><span>Подробнее</span></a>
 							<table class="slide-parameters">
@@ -107,7 +109,7 @@
 							</table>
 						</div>
 					</li>
-					<li class="slide">
+					<li class="slide" id="slide3">
 						<p class="slide-number">03</p>
 						<div class="slide-image">
 							<img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
@@ -129,20 +131,11 @@
 						</div>
 					</li>
 				</ul>
-				<ul class="slider-nav">
-					<li class="dot">
-						<input type="radio" id="dot1" name="slides" checked>
-						<label for="dot1">Слайд 1</label>
-					</li>
-					<li class="dot">
-						<input type="radio" id="dot2" name="slides">
-						<label for="dot2">Слайд 2</label>
-					</li>
-					<li class="dot">
-						<input type="radio" id="dot3" name="slides">
-						<label for="dot3">Слайд 3</label>
-					</li>
-				</ul>
+				<div class="slider-nav">
+					<label for="dot1">Слайд 1</label>
+					<label for="dot2">Слайд 2</label>
+					<label for="dot3">Слайд 3</label>
+				</div>
 			</section>
 			<section class="category">
 				<h2 class="visually-hidden">Категории товаров</h2>
@@ -201,27 +194,30 @@
 		<section class="services">
 			<div class="container">
 				<h2 class="visually-hidden">Сервисы</h2>
+				<input class="visually-hidden" type="radio" id="tab1" name="services" checked>
+				<input class="visually-hidden" type="radio" id="tab2" name="services">
+				<input class="visually-hidden" type="radio" id="tab3" name="services">
 				<ul class="services-list">
-					<li class="services-item services-item-current">
-						<p class="btn services-bookmark">Доставка</p>
+					<li class="services-item">
+						<label class="btn services-bookmark" for="tab1">Доставка</label>
 					</li>
 					<li class="services-item">
-						<p class="btn services-bookmark">Гарантия</p>
+						<label class="btn services-bookmark" for="tab2">Гарантия</label>
 					</li>
 					<li class="services-item">
-						<p class="btn services-bookmark">Кредит</p>
+						<label class="btn services-bookmark" for="tab3">Кредит</label>
 					</li>
 				</ul>
 				<div class="services-desc">
-					<div class="services-desc-item services-desc-item-delivery">
+					<div class="services-desc-item services-desc-item-delivery" id="delivery">
 						<h3 class="title">Доставка</h3>
 						<p class="services-item-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 					</div>
-					<div class="services-desc-item services-desc-item-warranty">
+					<div class="services-desc-item services-desc-item-warranty" id="warranty">
 						<h3 class="title">Гарантия</h3>
 						<p class="services-item-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br>Товар, не дом, конечно же.</p>
 					</div>
-					<div class="services-desc-item services-desc-item-credit">
+					<div class="services-desc-item services-desc-item-credit" id="credit">
 						<h3 class="title">Кредит</h3>
 						<p class="services-item-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 					</div>
@@ -270,7 +266,8 @@
 					<h2 class="title contacts-title">Контакты</h2>
 					<p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 					<a class="contacts-map-link" href="#">
-						<img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу город Москва, улица Строителей 15">
+						<!-- <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу город Москва, улица Строителей 15"> -->
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931582563!3d55.68703098053581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1582396701305!5m2!1sru!2sru" width="560" height="222" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 					</a>
 					<a href="#" class="btn index-column-btn"><span>Напишите нам</span></a>
 				</section>
